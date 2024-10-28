@@ -1,4 +1,3 @@
-import { Oxygen_Mono_Varoable } from "@/app/layout";
 import {
   Carousel,
   CarouselContent,

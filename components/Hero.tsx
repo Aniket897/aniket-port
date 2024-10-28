@@ -81,7 +81,11 @@ function Hero() {
           </Button>
         </a>
         <a
-          href={`${window.location.origin}/aniket_kangane_resume.pdf`}
+          href={
+            typeof window !== "undefined"
+              ? `${window.location.origin}/aniket_kangane_resume.pdf`
+              : "/aniket_kangane_resume.pdf"
+          }
           target="_blank"
           rel="noreferrer"
         >
