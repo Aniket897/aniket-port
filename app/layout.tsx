@@ -9,18 +9,18 @@ import {
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 
-export const League_Spartan_Variant = League_Spartan({
+const League_Spartan_Variant = League_Spartan({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-export const ManropeVariable = Manrope({
+const ManropeVariable = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-export const Oxygen_Mono_Varoable = Oxygen_Mono({
+const Oxygen_Mono_Varoable = Oxygen_Mono({
   weight: ["400"],
   subsets: ["latin"],
 });

@@ -50,7 +50,8 @@ function About() {
               <p className="font-bold text-3xl">Aniket Kangane</p>
               <p
                 style={{
-                  fontFamily: "menlo",
+                  fontFamily:
+                    "menlo, Oxygen mono, Fira code, monoid, Operator mono",
                 }}
                 className="text-neutral-500"
               >
