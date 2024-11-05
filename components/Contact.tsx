@@ -8,12 +8,7 @@ function Contact() {
           ""
         )}&body=${encodeURIComponent("")}`}
       >
-        <span
-          style={{
-            fontFamily: "menlo",
-          }}
-          className="bg-[#82FF1F] text-black p-2 mt-4 cursor-pointer"
-        >
+        <span className="bg-[#82FF1F] text-black p-2 mt-4 cursor-pointer">
           aniketbkangane9637@gmail.com
         </span>
       </a>

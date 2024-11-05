@@ -77,7 +77,7 @@ function ProjectCard({
     <div className="space-y-5 border-b-2 pb-[50px]">
       <div>
         <Image
-          className="w-full"
+          className="w-full rounded-3xl"
           src={image}
           width={10000}
           height={20000}
@@ -88,16 +88,16 @@ function ProjectCard({
         <p className="capitalize text-2xl">{name}</p>
         <p>{description}</p>
       </div>
-      <div className="gap-3 flex flex-wrap" style={{ fontFamily: "menlo" }}>
+      <div className="gap-3 flex flex-wrap">
         {stack.map((s) => (
-          <span className="bg-white text-black text-xs p-2 font-bold px-3">
+          <span className="bg-white text-black text-xs p-2 font-bold px-3 rounded-md">
             {s}
           </span>
         ))}
       </div>
       <div className="md:space-x-5 mt-5">
         <a href={sourceCode} target="_blank" rel="noreferrer">
-          <Button className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5 max-md:w-full rounded-none">
+          <Button className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5 max-md:w-full">
             Source Code
             <div className="bg-white rounded-full flex items-center justify-center p-1">
               <Github size={15} />
@@ -105,7 +105,7 @@ function ProjectCard({
           </Button>
         </a>
         <a href={livePreview} target="_blank" rel="noreferrer">
-          <Button className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5 max-md:mt-5 max-md:w-full rounded-none">
+          <Button className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5 max-md:mt-5 max-md:w-full">
             Live Preview
             <div className="bg-white rounded-full flex items-center justify-center p-1">
               <Earth size={15} />

@@ -12,7 +12,7 @@ function Hero() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col space-y-9">
+    <div className=" max-md:pt-[100px] min-h-screen flex items-center justify-center flex-col space-y-9">
       <div className="absolute top-0 right-[30%] w-[150px] h-[150px] rounded-full bg-[#82FF1F] opacity-30 blur-2xl animate-pulse" />
 
       <div className="flex items-start gap-4">
@@ -56,15 +56,18 @@ function Hero() {
       </div>
       <div className="text-4xl lg:text-6xl lg:leading-[80px] leading-relaxed text-center">
         Hi! I'm{" "}
-        <span className="bg-[#82FF1F] border border-[#82FF1F] text-black px-3 py-1">
+        <span className="bg-[#82FF1F] border border-[#82FF1F] text-black px-3 py-1 rounded-xl">
           Aniket Kangane
         </span>{" "}
         <br />a{" "}
-        <span className="bg-white border border-white text-black  px-3 py-1">
+        <span className="bg-white border border-white text-black  px-3 py-1 rounded-xl">
           Full Stack Developer
           <br />
         </span>{" "}
-        from <span className="border-2 border-white px-3 py-1">India</span>{" "}
+        from{" "}
+        <span className="border-2 border-white px-3 py-1 rounded-xl">
+          India
+        </span>{" "}
         turning your ideas into reality.
       </div>
       <div className="space-x-5 mt-5">
@@ -73,7 +76,7 @@ function Hero() {
             ""
           )}&body=${encodeURIComponent("")}`}
         >
-          <Button className="bg-[#82FF1F] hover:bg-[#82FF1F] rounded-none text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5">
+          <Button className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5">
             Email Me
             <div className="bg-white rounded-full flex items-center justify-center p-1">
               <Mail size={15} />
@@ -91,7 +94,7 @@ function Hero() {
         >
           <Button
             onClick={downloadPdf}
-            className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black rounded-none  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5"
+            className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5"
           >
             Resume
             <div className="bg-white rounded-full flex items-center justify-center p-1">

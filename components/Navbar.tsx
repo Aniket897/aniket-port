@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="backdrop-blur-3xl bg-opacity-30 border border-white/10 fixed top-3 left-1/2 transform -translate-x-1/2 w-[90vw] lg:w-[70vw] z-50">
+    <nav className="backdrop-blur-3xl bg-opacity-30 border border-white/10 fixed top-3 left-1/2 transform -translate-x-1/2 w-[90vw] lg:w-[70vw] z-50 rounded-2xl">
       <div className="px-4 py-4 flex justify-between items-center">
         <div className="bg-white text-black flex items-center justify-center w-[40px] h-[40px] rounded-full text-3xl">
           A
@@ -27,7 +27,7 @@ const Navbar = () => {
           >
             <Button
               onClick={downloadPdf}
-              className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5 rounded-none"
+              className="bg-[#82FF1F] hover:bg-[#82FF1F] text-black  hover:shadow-[0_0_20px_#82FF1F,0_0_40px_#82FF1F,0_0_60px_#82FF1F] transition-shadow duration-300 py-5"
             >
               Resume
               <div className="bg-white rounded-full flex items-center justify-center p-1">

@@ -8,6 +8,11 @@ import {
 } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
+import localFont from "next/font/local";
+
+const localfont = localFont({
+  src: "./fonts/local.otf",
+});
 
 const League_Spartan_Variant = League_Spartan({
   subsets: ["latin"],
@@ -46,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${League_Spartan_Variant.className} antialiased`}>
+      <body className={`${localfont.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
           {children}

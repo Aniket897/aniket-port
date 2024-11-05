@@ -34,8 +34,8 @@ function About() {
     <div className="min-h-screen space-y-20">
       <div className="text-center text-6xl">About Me</div>
       <div className="space-y-6">
-        <div className="bg-card border p-10">
-          <div className="flex gap-10 items-center">
+        <div className="bg-card border p-10 rounded-3xl">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
             <div className="w-[100px] h-[100px] bg-white rounded-full overflow-hidden">
               <Image
                 src={"/profile.png"}
@@ -48,15 +48,7 @@ function About() {
             </div>
             <div>
               <p className="font-bold text-3xl">Aniket Kangane</p>
-              <p
-                style={{
-                  fontFamily:
-                    "menlo, Oxygen mono, Fira code, monoid, Operator mono",
-                }}
-                className="text-neutral-500"
-              >
-                Frontend Intern at Whatbytes
-              </p>
+              <p className="text-neutral-500">Frontend Intern at Whatbytes</p>
               <div className="space-x-5 mt-2">
                 <a
                   href={`mailto:aniketbkangane9637@gmail.com?subject=${encodeURIComponent(
