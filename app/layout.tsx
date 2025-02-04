@@ -5,6 +5,7 @@ import {
   Bricolage_Grotesque,
   Oxygen_Mono,
   League_Spartan,
+  Darker_Grotesque,
 } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
@@ -35,6 +36,10 @@ const Bricolage_Grotesque_Variable = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
+const dark = Darker_Grotesque({
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Aniket Kangane - Full Stack Developer",
   description:
@@ -51,7 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${localfont.className} antialiased`}>
+      <body className={`${Bricolage_Grotesque_Variable.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
           {children}

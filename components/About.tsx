@@ -110,7 +110,7 @@ const Experience = () => {
           <p className="text-neutral-400">Frontend Intern</p>
         </div>
         <div className="capitalize text-xs">
-          <p>aug 2025 - Present</p>
+          <p>july 2024 - Dec 2024</p>
         </div>
       </div>
       <div className="flex items-center gap-8 mt-8">
@@ -120,7 +120,7 @@ const Experience = () => {
           <p className="text-neutral-400">Frontend Enginner Intern</p>
         </div>
         <div className="capitalize text-xs">
-          <p>aug 2025 - aug 2025</p>
+          <p>mar 2024 - may 2024</p>
         </div>
       </div>
     </div>
@@ -140,7 +140,7 @@ const Education = () => {
           <p className="text-neutral-400">Prepleaf by masai</p>
         </div>
         <div className="capitalize text-xs">
-          <p>jan 2023 - sept 2024</p>
+          <p>jan 2023 - jan 2025</p>
         </div>
       </div>
       <div className="flex items-center gap-8 mt-8">
@@ -152,7 +152,7 @@ const Education = () => {
           <p className="text-neutral-400">BAMU</p>
         </div>
         <div className="capitalize text-xs">
-          <p>jun 2021 - may 2025</p>
+          <p>jun 2021 - mar 2025</p>
         </div>
       </div>
     </div>

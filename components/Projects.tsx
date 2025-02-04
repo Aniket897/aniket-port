@@ -89,8 +89,11 @@ function ProjectCard({
         <p>{description}</p>
       </div>
       <div className="gap-3 flex flex-wrap">
-        {stack.map((s) => (
-          <span className="bg-white text-black text-xs p-2 font-bold px-3 rounded-md">
+        {stack.map((s, index) => (
+          <span
+            key={index}
+            className="bg-white text-black text-xs p-2 font-bold px-3 rounded-md"
+          >
             {s}
           </span>
         ))}
@@ -122,8 +125,8 @@ function Projects() {
     <div id="projects" className="mx-auto space-y-20 min-h-screen">
       <div className="text-center text-6xl">Projects</div>
       <div className="space-y-20">
-        {projects.map((project) => (
-          <ProjectCard {...project} />
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
     </div>
